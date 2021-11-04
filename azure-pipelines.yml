@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Bash@3
+  inputs:
+    filePath: 'imagescan.sh'
+  displayName: 'Run a one-line script'
