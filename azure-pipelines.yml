@@ -7,5 +7,5 @@ pool:
 steps:
 - task: Bash@3
   inputs:
-    filePath: 'imagescan.sh'
+    filePath: 'scanimage.sh'
   displayName: 'Run a one-line script'
