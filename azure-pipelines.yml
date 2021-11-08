@@ -5,7 +5,8 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Bash@3
+- task: prisma-cloud-compute-scan@3
   inputs:
-    filePath: 'scanimage.sh'
-  displayName: 'Run a one-line script'
+    scanType: 'images'
+    twistlockService: 'Prisma Cloud Compute Console'
+    artifact: 'itresoldi/evilpetclininc.latest'
